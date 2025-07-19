@@ -1,0 +1,110 @@
+/* === IMPORT DAS VARIAVEIS === */
+@import url('../../css/variaveis.css');
+
+/* Container da carta */
+.container-carta {
+  width: 70%;
+  margin: 0 auto;
+  background-color: transparent;
+  padding: 30px;
+  border: 1px solid var(--ciano);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  border-radius: 8px;
+  margin-bottom: 5%;
+}
+
+/* Linhas horizontais neon */
+.linha {
+  border: none;
+  border-top: 2px solid var(--ciano);
+  margin: 20px 0;
+  box-shadow: 0 0 10px var(--ciano);
+}
+
+/* Cabeçalho do relatório */
+.container > div > p {
+  margin-bottom: 8px;
+  letter-spacing: 0.5px;
+}
+
+/* Seções numeradas */
+.container-carta h3 {
+  color: var(--rosinha);
+  font-size: 22px;
+  margin: 20px 0 10px 0;
+  text-shadow: 0 0 2px var(--rosinha);
+  text-transform: uppercase;
+}
+
+.container-carta p {
+  color: #eee;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* Destaques */
+.carta-strong {
+  color: var(--rosinha);
+  text-shadow: 0 0 5px var(--rosinha);
+}
+
+/*Botão de voltar*/
+
+.container-btn-carta{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 3%;
+}
+
+.btn-voltar-carta{
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--texto-base);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.btn-voltar-carta::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(
+    270deg,
+    var(--rosinha),
+    var(--rosa-claro),
+    var(--rosinha-suave),
+    var(--rosa-claro-suave),
+    var(--rosinha)
+  );
+  background-size: 500% 500%;
+  animation: rosaGlow 10s ease infinite;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  pointer-events: none;  
+}
+
+@keyframes rosaGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 500% 50%;
+  }
+}

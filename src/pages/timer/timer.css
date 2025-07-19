@@ -1,0 +1,207 @@
+/* === IMPORT DAS VARIAVEIS === */
+@import url('../../css/variaveis.css');
+
+/* Títuos */
+.titulo-timer h3,
+.log-emocoes h3,
+.titulo-frase-dia h3 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.titulo-timer{
+  color: var(--verdinho);
+  text-shadow: 0 0 3px var(--verdinho), 0 0 5px var(--verdinho);
+  text-align: center;
+  margin-bottom: 3%;
+}
+
+.log-emocoes h3{
+  color: var(--ciano);
+  text-shadow: 0 0 3px var(--ciano), 0 0 5px var(--ciano);
+}
+
+.titulo-frase-dia{
+  color: var(--amarelo);
+  text-shadow: 0 0 3px var(--rosinha);
+  margin-top: -2%;
+  text-align: center; 
+}
+
+/*Conteudo total*/
+.container-conteudo{
+  width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Timer em destaque */
+.timer {
+  font-size: 24px;
+  color: var(--amarelo);
+  text-shadow: 0 0 8px var(--amarelo);
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 5px;
+  width: 55%;
+  height: 80px;
+  border: 2px solid var(--amarelo);
+  box-shadow: 0 0 12px var(--amarelo);
+  margin: 0 auto;
+}
+
+/*Log Emoções*/
+.log-emocoes{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lista {
+  list-style: none;
+  padding-left: 0;
+  width: 60%;
+}
+
+.lista li {
+  background-color: #111;
+  border-left: 4px solid var(--ciano);
+  border-bottom: 3px solid var(--ciano);
+  padding: 15px 12px;
+  margin: 25px 0;
+  color: var(--ciano);
+  transition: background 0.3s;
+  box-shadow: 0 0 6px var(--ciano);
+  border-radius: 10px;
+  font-size: 22px;
+  
+}
+
+.lista li:hover {
+  background-color: rgba(255, 0, 255, 0.2);
+  box-shadow: 0 0 10px var(--roxo-neon);
+  border-left: 4px solid var(--roxo-neon);
+  border-bottom: 3px solid var(--roxo-neon);
+
+}
+
+/* Frase do dia */
+.container-frase {
+  background: transparent;
+  width: 55%;
+  max-width: 700px;
+  min-height: 150px;
+  max-height: 200px;
+  padding: 15px;
+  border: 3px solid var(--rosinha);
+  border-radius: 8px;
+  box-shadow: 0 0 15px var(--rosinha);
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3%;
+}
+
+.fase-dia {
+  font-style: italic;
+  font-size: 26px;
+  margin-top: 15px;
+  color: var(--rosa-claro);
+  text-shadow: 0 0 6px var(--rosa-claro);
+  text-align: center;
+}
+/* Linha de Separação*/
+.linha-timer{
+  border: 2px solid transparent;
+  width: 90%;
+  padding: 3px;
+  position: relative;
+  z-index: 1;
+  margin-top: 3%;
+}
+
+.linha-timer::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 5px;
+  padding: 3px;
+  background: linear-gradient(270deg, var(--verdinho),var(--roxo-neon), var(--ciano), var(--amarelo), var(--rosinha));
+  background-size: 600% 600%;
+  animation: bordaGlow 8s ease infinite;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+@keyframes bordaGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*Botão voltar*/
+.container-btn-timer{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 3%;
+}
+
+.btn-voltar-timer {
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--rosinha);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.btn-voltar-timer::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(
+    270deg,
+    var(--verdinho),
+    var(--roxo-neon),
+    var(--ciano),
+    var(--amarelo),
+    var(--rosinha)
+  );
+  background-size: 600% 600%;
+  animation: bordaGlow 8s ease infinite;
+
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+.btn-voltar-timer:hover {
+  box-shadow: 0 0 20px var(--rosinha);
+}

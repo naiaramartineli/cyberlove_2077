@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Episódio 1: Missão: Primeira Conexão",
+    "src": "/mp3/ep1.mp3"
+  },
+  {
+    "title": "Episódio 2: Pré-Boss: Ansiedade no Inventário",
+    "src": "/mp3/ep2.mp3"
+  },
+  {
+    "title": "Episódio 3: Fase Secreta: Confissões",
+    "src": "/mp3/ep3.mp3"
+  },
+    {
+    "title": "Episódio 4: Final Boss OU Inicio da Campanha",
+    "src": "/mp3/ep4.mp3"
+  },
+    {
+    "title": "Bônus Track: Happy Birthday",
+    "src": "/mp3/bonusTrack.mp3"
+  }
+]

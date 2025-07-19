@@ -1,0 +1,97 @@
+{
+  "nublado": [
+    ">> [WEATHER.LOG] :: Céu parcialmente nublado.",
+    "Luz difusa ativa. O sol tenta se esconder, mas não mais do que você tenta disfarçar esse olhar.",
+    "Perigo de claridade mútua: ambos expostos."
+  ],
+  "calor": [
+    ">> [ALERTA TÉRMICO] :: Calor intenso em superfície e proximidades.",
+    "Temperatura ambiente: 32°C.",
+    "Causa provável: presença detectada.",
+    "Recomendável: manter distância emocional segura (ou não)."
+  ],
+  "chuva": [
+    ">> [CHUVA ISOLADA DETECTADA]",
+    "Gotas escorrem. O céu chora lentamente — talvez por saudade não declarada.",
+    "Chance de confissão: 63%.",
+    "Recomenda-se abrigo compartilhado. Pele com pele é mais eficiente que capa de chuva."
+  ],
+  "frentefria": [
+    ">> [FRENTE FRIA ENTRANTE] :: Zona de impacto emocional prevista.",
+    "Ar gélido em movimento... mas sensores internos acusam calor ao toque.",
+    "Aconselhado: contato gradual com fonte de calor (você)."
+  ],
+  "ceucoberto": [
+    ">> [SATÉLITE_SCAN] :: Céu encoberto, vibração transparente.",
+    "Visibilidade: limitada.",
+    "Intenção: exposta.",
+    "Leitura emocional indica aproximação voluntária. Seja o raio que rasga essa nuvem."
+  ],
+  "tempestade": [
+    ">> [TEMPESTADE ELÉTRICA EM FORMAÇÃO]",
+    "Carga acumulada: alta.",
+    "Campo magnético entre dois corpos provocando faíscas.",
+    "Toque não autorizado pode gerar queda de barreiras emocionais.",
+    "Atenção: tempestade de química à vista."
+  ],
+  "neblina": [
+    ">> [NEBLINA ATIVADA]",
+    "Direção incerta, mas GPS emocional rastreia sua frequência.",
+    "Mesmo com tudo obscurecido... você brilha nos sensores.",
+    "Tempo indefinido para dissipar esse efeito."
+  ],
+  "vento": [
+    ">> [RAJADAS REGISTRADAS] :: Ventos até 70km/h.",
+    "Mas nada mais arrebatador que sua passagem.",
+    "Corrente de ar instável + perfume identificado.",
+    "Resultado: desestabilização dos batimentos em 0.7s."
+  ],
+  "ceulimpo": [
+    ">> [CÉU LIMPO] :: Arco-íris confirmado após sistema de chuva emocional.",
+    "O espectro inteiro de emoções visível após a tempestade.",
+    "Risco de sentimento: moderado.",
+    "Protocolo ativado: 'seguir esse arco até você'."
+  ],
+  "geada": [
+    ">> [GEADA LOCALIZADA] :: Frieza detectada na superfície.",
+    "Mas os sensores internos identificam calor latente...",
+    "A camada de gelo é fina. Bastam palavras certas para romper.",
+    "Recomenda-se toque cálido com intenção verdadeira."
+  ],
+  "brisa": [
+    ">> [ANÁLISE DE BRISA SUAVE] :: Corrente de ar leve detectada.",
+    "// Efeito colateral: lembrança da sua voz sussurrando segredos desconexos ao pé do ouvido.",
+    ":: Arquivo de memórias ativado. Emoções revividas com precisão de nanosegundos."
+  ],
+  "pordosol": [
+    ">> [SENSOR DE LUZ] :: Frequência laranja-avermelhada crescente.",
+    "// Identificado: entardecer em modo contemplativo.",
+    ":: Dados cruzados indicam desejo súbito de dividir silêncios contigo enquanto o mundo desacelera."
+  ],
+  "neve": [
+    ">> [CÉLULAS DE FRIO ATIVADAS] :: Cristais de gelo no ar.",
+    "// Cada floco parece guardar uma lembrança sua em suspensão.",
+    ":: Coração em modo descongelamento... Ao menor toque, colapsa em sentimento."
+  ],
+  "baixaumidade": [
+    ">> [ALERTA DE UMIDADE RELATIVA] :: Secura detectada.",
+    "// Mas seu nome umedece a mente como poesia suave entre bytes.",
+    ":: Recomendação: hidratação por contato ocular prolongado."
+  ],
+  "raio": [
+    ">> [DESCARGA ELÉTRICA DETECTADA] :: Raio atingiu a atmosfera.",
+    "// Possível catalisador: seus olhos encontrando os meus.",
+    ":: Consequência prevista: curto-circuito entre almas conectadas por Bluetooth emocional."
+  ],
+  "mormaço": [
+    ">> [CALOR SUFOCANTE EM SUPERFÍCIE] :: Mormaço identificado.",
+    "// Mesmo sem sol direto, sinto febre ao lembrar teu toque.",
+    ":: Sistema operando em modo lento — culpa da saudade condensada no ar."
+  ],
+  "orvalho": [
+    ">> [UMIDADE MATINAL] :: Orvalho formado sobre superfícies sensíveis.",
+    "// Gotas lembram promessas ditas baixo, como código-fonte secreto de nós dois.",
+    ":: Ideal para reconexão em ambiente calmo, com café e você."
+  ]
+}
+

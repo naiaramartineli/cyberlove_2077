@@ -1,0 +1,108 @@
+/* === IMPORT DAS VARIAVEIS === */
+@import url('../../css/variaveis.css');
+
+/*Container do terminal*/
+.terminal {
+  width: 70%;
+  background-color:transparent;
+  white-space: pre-wrap;
+  padding: 30px;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  min-height: 100vh;
+}
+
+/*Mensagem*/
+.mensagem-niver{
+  font-size: 24px;
+  line-height: 1.6;
+  overflow: auto;
+  color: var(--ciano);
+}
+
+.borda-animada {
+  border: 5px solid transparent;
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.borda-animada::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 8px;
+  padding: 5px;
+  background: linear-gradient(270deg, var(--verdinho),var(--roxo-neon), var(--ciano), var(--amarelo), var(--rosinha));
+  background-size: 600% 600%;
+  animation: bordaGlow 8s ease infinite;
+  mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+}
+
+@keyframes bordaGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*Botão de Voltar*/
+.container-btn-niver{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-voltar-niver{
+  position: relative;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: 'Share Tech Mono', monospace;
+  color: var(--texto-base);
+  background-color: transparent; /* ou var(--bg-bloco) para um leve destaque */
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  z-index: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+.btn-voltar-niver::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: 8px;
+  padding: 2px;
+  background: linear-gradient(270deg, var(--verdinho), var(--roxo-neon), var(--ciano), var(--amarelo), var(--rosinha));
+  background-size: 600% 600%;
+  animation: bordaGlowB 8s ease infinite;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  -webkit-mask-composite: destination-out;
+  pointer-events: none;
+}
+
+@keyframes bordaGlowB {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 600% 50%;
+  }
+}

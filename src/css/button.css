@@ -1,0 +1,107 @@
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* === Variáveis === */
+:root {
+  --cor-fundo: #0d0d0d;
+  --ciano: #00ffff;
+  --rosinha: #ff007f;
+  --amarelo: #FFD700;
+  --roxo-neon:#ff00ff;
+  --cinza-footer: #888;
+  --bg-botao: #1a1a1a;
+}
+
+/* Configuração geral*/
+button {
+  width: 250px;
+  height: 80px;
+  padding: 15px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-family: 'Share Tech Mono',monospace;
+}
+
+/*Botões da home*/
+.btn-memoria, .btn-niver,
+.btn-carta,.btn-playlist,
+.btn-mapa, .btn-terminal,
+.btn-radio,.btn-clima{
+  background-color: var(--bg-botao);
+  color: var(--rosinha);
+  border: 2px solid var(--ciano);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-wrap: balance;
+  font-family: 'Share Tech Mono',monospace;
+  font-size: 16px;
+}
+
+.btn-memoria:hover, .btn-niver:hover,
+.btn-carta:hover,.btn-playlist:hover,
+.btn-mapa:hover, .btn-terminal:hover,
+.btn-radio:hover,.btn-clima:hover{
+  background-color: var(--ciano);
+  color: var(--cor-fundo);
+  box-shadow: 0 0 20px var(--ciano), 0 0 10px var(--ciano) inset;
+  border-color: var(--amarelo);
+}
+
+/* Botão voltar */
+.btn-voltar {
+  height: 40px;
+  width: 200px;
+  margin-bottom: 60px;
+}
+
+/* === MEDIA QUERY ATÉ 768px (TABLETS) === */
+@media (max-width: 768px) {
+  button {
+    width: 200px;
+    height: 70px;
+    font-size: 14px;
+    padding: 12px 16px;
+  }
+
+  .btn-voltar {
+    width: 180px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+/* === MEDIA QUERY ATÉ 480px (CELULARES) === */
+@media (max-width: 480px) {
+  button {
+    width: 100%;
+    max-width: 180px;
+    height: 60px;
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .btn-voltar {
+    width: 160px;
+    height: 32px;
+    font-size: 13px;
+    margin-bottom: 40px;
+  }
+
+  .btn-memoria, .btn-niver,
+  .btn-carta, .btn-playlist,
+  .btn-mapa, .btn-terminal,
+  .btn-radio, .btn-clima {
+    font-size: 13px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.25);
+  }
+}
+

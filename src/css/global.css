@@ -1,0 +1,134 @@
+/*Estilização Global para termos frequentes*/
+
+/* Importando fonte */
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+/* === Variáveis === */
+:root {
+  --cor-fundo: #0d0d0d;
+  --ciano: #00ffff;
+  --rosinha: #ff007f;
+  --amarelo: #FFD700;
+  --roxo-neon:#ff00ff;
+  --verdinho:#00ff95;
+  --cinza-footer: #888;
+  --bg-botao: #1a1a1a;
+}
+
+html, body {
+  background-color: var(--cor-fundo);
+  height: 100%;
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Título */
+.titulo h1 {
+  color: var(--amarelo);
+  text-shadow: 0 0 10px var(--amarelo);
+  font-size: 40px;
+  margin-top: 3%;
+  text-align: center;
+}
+
+/* Subtítulo */
+.subtitulo h2 {
+  color: var(--ciano);
+  font-size: 26px;
+  text-align: center;
+  margin-top: 2%;
+  text-shadow: 0 0 6px var(--ciano);
+}
+
+/*Estrutura flexível principal da página*/
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+/* conteudo da página */
+.conteudo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background-color: var(--bg-botao);
+  padding: 15px 0;
+  text-align: center;
+  border-top: 1px solid var(--ciano);
+  position: relative;
+  margin-top: 4%; 
+}
+
+.p-footer {
+  color: var(--cinza-footer);
+  font-size: 0.9rem;
+}
+
+/* === MEDIA QUERY ATÉ 768px (TABLETS) === */
+@media (max-width: 768px) {
+  .titulo h1 {
+    font-size: 32px;
+    margin-top: 4%;
+    padding: 0 10px;
+  }
+
+  .subtitulo h2 {
+    font-size: 22px;
+    margin-top: 3%;
+    padding: 0 10px;
+  }
+
+  .conteudo {
+    padding: 0 20px;
+  }
+
+  .footer {
+    padding: 12px 0;
+  }
+
+  .p-footer {
+    font-size: 0.8rem;
+  }
+}
+
+/* === MEDIA QUERY ATÉ 480px (CELULARES) === */
+@media (max-width: 480px) {
+  .titulo h1 {
+    font-size: 26px;
+    margin-top: 5%;
+    padding: 0 10px;
+  }
+
+  .subtitulo h2 {
+    font-size: 18px;
+    margin-top: 4%;
+    padding: 0 10px;
+  }
+
+  .conteudo {
+    padding: 0 15px;
+  }
+
+  .footer {
+    padding: 10px 0;
+    margin-top: 6%;
+  }
+
+  .p-footer {
+    font-size: 0.75rem;
+  }
+}
+
+

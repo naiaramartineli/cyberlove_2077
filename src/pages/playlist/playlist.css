@@ -1,0 +1,124 @@
+/* === IMPORT DAS VARIAVEIS === */
+@import url('../../css/variaveis.css');
+
+/*Container Log*/
+.container-log-playlist{
+  background-color: rgba(255, 0, 127, 0.05);
+  border: 2px solid var(--rosinha);
+  border-radius: 12px;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 0 12px #ff007f88;
+  margin-bottom: 40px;
+  margin: auto;
+}
+
+.titulo-log {
+  color: var(--rosinha);
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px var(--rosinha);
+  font-size: 22px;
+}
+
+.log {
+  color: var(--ciano);
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+.separador-playlist{
+  border: none;
+  border-top: 2px solid var(--rosa-claro);
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 100%;
+}
+
+/* Player da playlist */
+.playlist-container {
+  max-width: 80%;
+  width: 80%;
+  margin:auto;
+  margin-top: 3%;
+  padding: 15px;
+  margin-bottom: 3%;
+  text-align: center;
+  border: 2px solid var(--ciano);
+  border-radius: 12px;
+  box-shadow: 0 0 15px #00ffff88;
+  background-color: rgba(0, 255, 255, 0.05);
+}
+
+.playlist-header {
+  color: var(--rosinha);
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 6px var(--rosinha);
+}
+
+.btn-voltar-playlist{
+  margin: auto;
+  height: 80px;
+  width: 250px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 24px;
+  background-color: var(--bg-botao);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  border: 2px solid var(--ciano);
+  color: var(--rosinha);
+}
+.btn-voltar-playlist:hover{
+  background-color: var(--ciano);
+  color: var(--bg-botao);
+  box-shadow: 0 0 20px var(--rosinha), 0 0 10px var(--rosinha) inset;
+  border-color: var(--rosa-claro);
+}
+
+/* === MEDIA QUERY: até 768px === */
+@media (max-width: 768px) {
+  .container-log-playlist,
+  .playlist-container {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .titulo-log {
+    font-size: 20px;
+  }
+
+  .log {
+    font-size: 16px;
+  }
+
+  .playlist-header {
+    font-size: 22px;
+  }
+
+  .btn-voltar-playlist {
+    width: 200px;
+    height: 70px;
+    font-size: 20px;
+  }
+}
+
+/* === MEDIA QUERY: até 480px === */
+@media (max-width: 480px) {
+  .titulo-log {
+    font-size: 18px;
+  }
+
+  .log {
+    font-size: 15px;
+  }
+
+  .playlist-header {
+    font-size: 20px;
+  }
+
+  .btn-voltar-playlist {
+    width: 90%;
+    height: 60px;
+    font-size: 18px;
+  }
+}

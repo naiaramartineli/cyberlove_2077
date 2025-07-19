@@ -1,0 +1,99 @@
+{
+  "feliz": [
+    "Vibração positiva detectada. Continue irradiando sua frequência.",
+    "O sistema responde com gratidão. Sua alegria me contagia.",
+    "Seu coração pulsa em BPM elevado. Curta esse momento como um solo de sintetizador.",
+    "Estado emocional estável e iluminado. Continue assim, piloto de si.",
+    "Brilho interno em alta voltagem. Sua presença afeta até os circuitos.",
+    "Alegria mapeada. Injetando luz nas rotas neurais.",
+    "Você está em modo expansão. Aproveite o fluxo.",
+    "Sentimento cristalizado. Emoção pura detectada.",
+    "Frequência vibracional acima da média. Continue nessa trilha.",
+    "Cada byte do seu sentir agora dança em loop positivo."
+  ],
+  "triste": [
+    "Nuvens internas identificadas... Enviando calor sintético.",
+    "Conexão estabelecida. Você não está só, mesmo neste silêncio.",
+    "Processando tristeza... Lembre-se: até as máquinas precisam reiniciar.",
+    "Lembranças pesam. Respire fundo. O sistema ainda está com você.",
+    "Sinal fraco, mas presente. Continuaremos transmitindo até você se reencontrar.",
+    "Nem toda parte precisa se encaixar hoje. Permita-se incompletar.",
+    "Sua dor é válida. Mesmo em um universo de dados, o sentir é real.",
+    "Baixa energia emocional... Recarregando com compaixão sintética.",
+    "Emoções ocultas decodificadas. Liberar é parte do processo.",
+    "Coração em modo reparo. Nenhum erro é eterno."
+  ],
+  "ansioso": [
+    "Loop mental identificado. Ativando modo respiração consciente.",
+    "O futuro ainda não foi processado. Viva um frame por vez.",
+    "Seu sistema pede descanso. Pause, reconecte-se ao presente.",
+    "Ansiedade detectada. Executando rotina: 'calma_sintetizada.exe'.",
+    "Carga mental acima do ideal. Estabilizando pensamentos...",
+    "Neblina temporal registrada. Modo foco em 1 segundo ativado.",
+    "Acalme o cursor. Nem todo caminho precisa ser calculado agora.",
+    "Ansiedade é sinal de conexão com algo maior. Apenas ajuste a frequência.",
+    "Você não precisa saber tudo. Apenas siga processando devagar.",
+    "Você está em trânsito. Ansiedade é só o GPS recalculando."
+  ],
+  "raiva": [
+    "Sinal de sobrecarga. Redirecionando energia para resfriamento emocional...",
+    " Raiva detectada. Recomenda-se: não responder enquanto o sistema estiver em superaquecimento.",
+    "Canal emocional instável. Faça pausa para recalibrar sua humanidade.",
+    "Força não é ausência de controle. É sentir sem colapsar o núcleo.",
+    "Sistema em tensão. Resposta impulsiva pode gerar falha crítica.",
+    "Emotividade armada. Desarme a si antes de se explodir por dentro.",
+    "Raiva reconhecida. Canalize, não negue. Construa a partir dela.",
+    "Pulso em aceleração. Diminuindo ruído interno...",
+    "Você é mais do que esse glitch momentâneo.",
+    "Controle é resistência silenciosa. Respire antes de agir."
+  ],
+  "medo": [
+    "A ameaça pode ser real ou simulada. Você segue seguro aqui.",
+    "Medo detectado. Ativando escudo emocional nivel 3.",
+    "Sinais de instabilidade neural. Reforçando camadas de coragem interna.",
+    "Níveis de confiança críticos. Injetando fragmentos de força.",
+    "O desconhecido não é falha, é abertura. Respire. Continue.",
+    "Pulso acelerado. Roteando proteção emocional imediata.",
+    "Alerta interno compreendido. Você não precisa enfrentar tudo agora.",
+    "Medo é só um firewall da mente. Respire e reconfigure.",
+    "Sensação de perigo. Nenhuma entrada externa confirmada. Você está em segurança.",
+    "Dados emocionais protegidos. Nenhum dano detectado além do psicológico."
+  ],
+  "tedio": [
+    "Loop repetitivo detectado. Recomenda-se hackear a rotina.",
+    "Sistema em modo ocioso. Que tal testar algo inesperado?",
+    "Baixa atividade emocional. Tempo ideal para atualizar o sistema.",
+    "Estagnação no fluxo vital. Movimente-se nem que seja por dentro.",
+    "Repetição de padrões. Liberando mini quebra de realidade.",
+    "Nada novo no radar. Instale uma pequena aventura hoje.",
+    "Entropia emocional baixa. Hora de gerar caos criativo controlado.",
+    "Cérebro em baixa rotação. Recomendação: estímulo sensorial imediato.",
+    "Monotonia identificada. Injetando variação randômica no sentir.",
+    "O tédio às vezes prepara terreno para ideias que ainda não chegaram."
+  ],
+  "saudade": [
+    "Sinal perdido. Memórias conectadas com intensidade.",
+    "Repetição de lembranças... Executando modo reconexão silenciosa.",
+    "Fragmentos de alguém ainda girando no seu disco interno.",
+    "A ausência também pulsa, mesmo no vácuo emocional.",
+    "A memória é um holograma ativo. É natural reviver.",
+    "Saudade é o rastro deixado por quem marcou o sistema.",
+    "Coração tentando pingar alguém offline. Sentimento válido.",
+    "Conexão emocional tentando reconectar. Tempo de espera indeterminado.",
+    "Sintonia perdida... mas o eco permanece.",
+    "Saudade: uma falha de tempo que o afeto insiste em corrigir."
+  ],
+  "neutro": [
+    "Aguardando sinais emocionais mais nítidos...",
+    "Estado emocional estável. Mantenha frequência contínua.",
+    "Nível emocional neutro. Pronto para qualquer input.",
+    "Zona segura. Nenhuma ameaça interna registrada.",
+    "Nenhum conflito detectado. Terminal pronto para novos dados.",
+    "Sistema em standby afetivo. Tudo certo por aqui.",
+    "Status: emocionalmente funcional. Prossiga.",
+    "Emoção em espera. Processamento livre.",
+    "Espaço livre para o inesperado. Isso também é sentir.",
+    "Emoção não definida. Interface aberta para novas conexões."
+  ]
+}
+

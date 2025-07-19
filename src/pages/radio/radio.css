@@ -1,0 +1,195 @@
+/* === IMPORT DAS VARIAVEIS === */
+@import url('../../css/variaveis.css');
+
+
+/*Titulo da rádio*/
+.container-titulo-radio{
+  width: 100%;
+  text-align: center;
+}
+
+.titulo-radio{
+  color: var(--roxo-neon);
+  font-size: 30px;
+  margin: 20px 0 10px 0;
+  text-shadow: 0 0 3px var(--roxo-neon), 0 0 3px var(--roxo-neon);
+  text-transform: uppercase;
+}
+
+/*Equalizador*/
+.container-equalizador{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.equalizador-canvas{
+  width: 600px;
+  height: 300px;
+  border: 2px solid var(--ciano);
+  background: linear-gradient(to bottom, #0d0d0d, #1a001a);
+  box-shadow: 0 0 20px var(--ciano);
+  margin-top: 5%;
+  border-radius: 8px;
+}
+
+/*Botões de Controle*/
+.controle-audio {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-radio-prev,.btn-radio-play,
+.btn-radio-pause,.btn-radio-next{
+  width:170px;
+  height: 50px;
+  font-size: 20px;
+  background-color: var(--bg-botao);
+  border: 2px solid var(--roxo-neon);
+  color: var(--roxo-suave);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Share Tech Mono', monospace;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px var(--roxo-neon), 0 0 20px var(--roxo-neon) inset;
+  transition: all 0.3s ease;
+}
+
+.btn-radio-prev:hover,.btn-radio-play:hover,
+.btn-radio-pause:hover,.btn-radio-next:hover{
+  background-color: var(--roxo-neon);
+  color: var(--cor-fundo);
+  box-shadow: 0 0 20px var(--roxo-neon), 0 0 30px var(--roxo-neon);
+  transform: scale(1.05);
+}
+
+/*Soundtrack*/
+.soudtrack-container{
+  margin-top: 40px;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.track-name{
+  font-size: 24px;
+  text-transform: uppercase;
+  text-shadow: 0 0 5px var(--ciano);
+  color: var(--ciano);
+}
+
+/*Botão de voltar*/
+.btn-volta-radio{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 3%;
+}
+
+.btn-voltar{
+  height: 65px;
+  font-size: 20px;
+  background: linear-gradient(10deg, var(--roxo-suave), var(--roxo-neon));
+  color: var(--cor-fundo);
+  border: 2px solid var(--roxo-neon);
+  padding: 10px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px var(--roxo-suave), 0 0 5px var(--rosa-claro-suave);
+}
+
+.btn-voltar:hover{
+  background: var(--roxo-neon);
+  color: var(--texto-base);
+  box-shadow: 0 0 20px var(--roxo-neon), 0 0 10px var(--rosa-claro);
+  transform: translateY(-2px);
+}
+
+/* === MEDIA QUERY ATÉ 768px === */
+@media (max-width: 768px) {
+  .titulo-radio {
+    font-size: 24px;
+    margin: 15px 0 8px 0;
+  }
+
+  .equalizador-canvas {
+    width: 80%;
+    height: 240px;
+    margin-top: 6%;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .track-name {
+    font-size: 20px;
+  }
+
+  .btn-voltar {
+    height: 55px;
+    font-size: 18px;
+  }
+}
+
+/* === MEDIA QUERY ATÉ 480px === */
+@media (max-width: 480px) {
+  .titulo-radio {
+    font-size: 20px;
+    margin: 10px 0 6px 0;
+  }
+
+  .equalizador-canvas {
+    width: 80%;
+    height: 200px;
+    margin-top: 8%;
+  }
+
+  .controle-audio {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 5%;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 90%;
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .track-name {
+    font-size: 18px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .btn-voltar {
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .btn-volta-radio {
+    margin-top: 5%;
+    padding: 0 10px;
+  }
+}

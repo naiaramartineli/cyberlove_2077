@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+:root {
+  /* Cores principais neon */
+  --cor-fundo: #0d0d0d;
+  --ciano: #00ffff;
+  --rosinha: #ff007f;
+  --amarelo: #FFD700;
+  --roxo-neon: #ff00ff;
+  --rosa-claro: #ff99ff;
+  --verdinho: #00ff95;
+
+  /* Versões suaves */
+  --ciano-suave: #66fcf1;
+  --rosinha-suave: #ff80aa;
+  --amarelo-suave: #ffe680;
+  --roxo-suave: #e6a8ff;
+  --rosa-claro-suave: #ffc9f0;
+  --verdinho-suave: #66ffcc;
+
+  /* Neutros e fundos */
+  --texto-base: #d6d6d6;
+  --texto-secundario: #aaaaaa;
+  --cinza-footer: #888;
+  --bg-botao: #1a1a1a;
+  --bg-bloco: #121212;
+  --bg-highlight: #1f1f1f;
+
+  /*Fonte Padrão*/
+  --fonte-padrao:'Share Tech Mono';
+}

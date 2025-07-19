@@ -1,0 +1,211 @@
+/* === IMPORT DAS VARIAVEIS === */
+@import url('../../css/variaveis.css');
+
+/*Titulo*/
+.titulo-terminal{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.p-titulo-terminal{
+  text-transform: uppercase;
+  color:var(--roxo-neon);
+  font-size: 24px;
+  text-shadow: 0 0 6px var(--roxo-neon);
+  margin-top: 1%;
+}
+
+/*Container do terminal*/
+.bloco-terminal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* espaço entre os blocos */
+  padding: 10px;  
+}
+
+/*Container da Data*/
+.data-container{
+  width: 60%;
+  height: 50px;
+  text-align: left;
+  border-bottom: 2px solid var(--ciano);
+}
+
+.p-data-clima{
+  color: var(--ciano);
+  text-shadow: 0 0 6px var(--ciano);
+  font-size: 22px;
+}
+
+/*Terminal do relatório*/
+.terminal-clima{
+  display: inline-block;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: left;
+  line-height: 1.6rem;
+  width: 780px;
+  height: 350px;
+}
+
+.terminal-relatorio-container {
+  white-space: pre-wrap;
+  display: inline-block;
+  min-height: 200px; /* altura minima pro cursor não empurrar a div quando pisca*/
+  max-height: 450px;
+}
+
+.final-clima {
+  display: inline;
+  white-space: pre-wrap;
+  font-size: 22px;
+  color: var(--ciano);  
+  text-shadow: 0 0 5px var(--ciano), 0 0 10px var(--verdinho);
+
+}
+
+.cursor-clima {
+  display: inline; 
+  width: auto;     
+  vertical-align: baseline; 
+  animation: blink 1s step-end infinite;
+  color: var(--ciano);  
+  text-shadow: 0 0 5px var(--ciano), 0 0 10px var(--verdinho);
+}
+
+.clima{
+  font-size: 22px;
+  color: var(--ciano);  
+  text-shadow: 0 0 5px var(--ciano), 0 0 10px var(--verdinho);
+}
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/*Botão de voltar*/
+.btn-clima-container{
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.btn-voltar-clima {
+  position: relative;
+  padding: 12px 28px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 22px;
+  color: var(--bg-botao);
+  background-color: var(--bg-botao);
+  border: 2px solid var(--verdinho-suave);
+  border-radius: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.btn-voltar-clima::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(135deg,
+    var(--verdinho-suave),
+    var(--amarelo-suave),
+    var(--verdinho)
+  );
+  z-index: -1;
+  filter: blur(6px);
+  opacity: 0.5;
+  border-radius: 12px;
+  animation: pulsarVerdeAmarelo 3s ease-in-out infinite;
+}
+
+.btn-voltar-clima:hover {
+  color: var(--bg-botao);
+  background-color: var(--bg-highlight);
+  box-shadow: 0 0 12px var(--verdinho), 0 0 20px var(--amarelo-suave);
+}
+
+@keyframes pulsarVerdeAmarelo {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.03);
+  }
+}
+
+/* === MEDIA QUERY: até 768px === */
+@media (max-width: 768px) {
+  .p-titulo-terminal {
+    font-size: 20px;
+  }
+
+  .data-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .p-data-clima {
+    font-size: 20px;
+  }
+
+  .terminal-clima {
+    width: 90%;
+    height: auto;
+  }
+
+  .final-clima,
+  .clima {
+    font-size: 20px;
+  }
+
+  .btn-voltar-clima {
+    font-size: 20px;
+    padding: 10px 24px;
+  }
+}
+
+/* === MEDIA QUERY: até 480px === */
+@media (max-width: 480px) {
+  .p-titulo-terminal {
+    font-size: 18px;
+    margin-top: 3%;
+  }
+
+  .data-container {
+    width: 80%;
+    height: auto;
+  }
+
+  .p-data-clima {
+    font-size: 18px;
+  }
+
+  .terminal-clima {
+    width: 300px;
+    height: 300px;
+  }
+
+  .final-clima,
+  .clima {
+    font-size: 18px;
+  }
+
+  .btn-voltar-clima {
+    width: 90%;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+}
+

@@ -1,0 +1,91 @@
+/* === IMPORT DAS VARIAVEIS === */
+@import url('../../css/variaveis.css');
+
+.bg-loading{
+  background: radial-gradient(ellipse at center, #1a1a1a 0%, #0f0f0f 40%, #050505 80%, #000000 100%)
+}
+.terminal-container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.terminal-glow {
+  color: var(--ciano);
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 26px;
+  text-shadow: 0 0 3px var(--verdinho), 0 0 6px var(--verdinho), 0 0 12px var(--verdinho);
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  width: 60%;
+  max-width: 900px;
+  border: 2px solid #00f6ff44;
+  border-radius: 10px;
+  box-shadow: 0 0 30px #00f6ff33;
+  animation: flicker 1.5s infinite alternate;
+}
+
+.terminal-line {
+  margin-bottom: 8px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.terminal-cursor {
+  display: inline-block;
+  animation: blink 1s infinite;
+  color: var(--ciano);
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes flicker {
+  from { opacity: 1; }
+  to { opacity: 0.98; }
+}
+
+/* === MEDIA QUERY ATÉ 768px === */
+@media (max-width: 768px) {
+  .terminal-glow {
+    font-size: 20px;
+    padding: 1.5rem;
+    width: 80%;
+  }
+
+  .terminal-container {
+    margin-top: 8%;
+    padding: 0 16px;
+  }
+}
+
+/* === MEDIA QUERY ATÉ 480px === */
+@media (max-width: 480px) {
+  .terminal-glow {
+    font-size: 16px;
+    padding: 1rem;
+    width: 80%;
+    box-shadow: 0 0 15px #00f6ff22;
+  }
+
+  .terminal-container {
+    margin-top: 10%;
+    padding: 0 10px;
+    flex-direction: column;
+  }
+
+  .terminal-line {
+    font-size: 14px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+}
