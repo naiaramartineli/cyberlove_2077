@@ -1,58 +1,80 @@
 /* === IMPORT DAS VARIAVEIS === */
 @import url('../../css/variaveis.css');
 
+/* Layout base para manter footer no fim */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content-clima {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
 /*Titulo*/
-.titulo-terminal{
+.titulo-terminal {
   align-items: center;
   justify-content: center;
   text-align: center;
 }
 
-.p-titulo-terminal{
+.p-titulo-terminal {
   text-transform: uppercase;
-  color:var(--roxo-neon);
+  color: var(--roxo-neon);
   font-size: 24px;
   text-shadow: 0 0 6px var(--roxo-neon);
   margin-top: 1%;
 }
 
 /*Container do terminal*/
-.bloco-terminal{
+.bloco-terminal {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; /* espaço entre os blocos */
-  padding: 10px;  
+  gap: 15px;
+  padding: 10px;
 }
 
 /*Container da Data*/
-.data-container{
+.data-container {
   width: 60%;
   height: 50px;
   text-align: left;
   border-bottom: 2px solid var(--ciano);
 }
 
-.p-data-clima{
+.p-data-clima {
   color: var(--ciano);
   text-shadow: 0 0 6px var(--ciano);
   font-size: 22px;
 }
 
 /*Terminal do relatório*/
-.terminal-clima{
+.terminal-clima {
   display: inline-block;
   font-family: 'Share Tech Mono', monospace;
   text-align: left;
   line-height: 1.6rem;
   width: 780px;
   height: 350px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 .terminal-relatorio-container {
   white-space: pre-wrap;
   display: inline-block;
-  min-height: 200px; /* altura minima pro cursor não empurrar a div quando pisca*/
+  min-height: 200px;
   max-height: 450px;
 }
 
@@ -60,32 +82,34 @@
   display: inline;
   white-space: pre-wrap;
   font-size: 22px;
-  color: var(--ciano);  
+  color: var(--ciano);
   text-shadow: 0 0 5px var(--ciano), 0 0 10px var(--verdinho);
-
 }
 
 .cursor-clima {
-  display: inline; 
-  width: auto;     
-  vertical-align: baseline; 
+  display: inline;
+  vertical-align: baseline;
   animation: blink 1s step-end infinite;
-  color: var(--ciano);  
+  color: var(--ciano);
   text-shadow: 0 0 5px var(--ciano), 0 0 10px var(--verdinho);
 }
 
-.clima{
+.clima {
   font-size: 22px;
-  color: var(--ciano);  
+  color: var(--ciano);
   text-shadow: 0 0 5px var(--ciano), 0 0 10px var(--verdinho);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
+
 @keyframes blink {
   0%, 100% { opacity: 1; }
   50% { opacity: 0; }
 }
 
 /*Botão de voltar*/
-.btn-clima-container{
+.btn-clima-container {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -179,7 +203,7 @@
 /* === MEDIA QUERY: até 480px === */
 @media (max-width: 480px) {
   .p-titulo-terminal {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 3%;
   }
 
@@ -189,12 +213,16 @@
   }
 
   .p-data-clima {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .terminal-clima {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: auto;
+    flex-grow: 1;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
   }
 
   .final-clima,
@@ -207,5 +235,11 @@
     font-size: 18px;
     padding: 10px 20px;
   }
-}
 
+  .terminal-relatorio-container {
+    white-space: pre-wrap;
+    display: inline-block;
+    min-height: 280px;
+
+  }
+}

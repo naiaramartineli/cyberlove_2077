@@ -131,4 +131,14 @@ body {
   }
 }
 
+/* === MEDIA QUERY ATÉ 1024px (CELULARES) === */
+@media (max-width: 1024px) {
+  .subtitulo h2 {
+    font-size: 24px;
+    margin-top: 2%;
+    padding: 0 10px;
+  }
+
+}
+
 

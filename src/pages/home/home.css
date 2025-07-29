@@ -90,22 +90,62 @@
     width: 90%;
   }
 }
-
-/* === MEDIA QUERY ATÉ 480px (Celulares) === */
-@media (max-width: 480px) {
+/* === MEDIA QUERY ATÉ 800px (Tablets e laptops pequenos) === */
+@media (max-width: 800px) {
   .container-home {
-    gap: 20px;
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   .container-botao-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
   }
 
   .div1-home, .div2-home {
+    width: 45%;
+    display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 20px;
+  }
+
+  .mensagem {
+    padding: 20px;
+  }
+
+  .p-mensagem {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  .linha-home {
+    width: 95%;
+  }
+}
+
+/* === MEDIA QUERY ATÉ 480px (Celulares) === */
+@media (max-width: 480px) {
+  .container-home {
+    padding: 0 5px;
+  }
+
+  .container-botao-home {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .div1-home, .div2-home {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
   }
 
   .mensagem {
@@ -122,3 +162,43 @@
     width: 100%;
   }
 }
+
+/* === MEDIA QUERY ATÉ 1024px (Tablets grandes e notebooks) === */
+@media (max-width: 1024px) {
+  .container-home {
+    padding: 0 30px;
+    gap: 5px;
+  }
+
+  .container-botao-home {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .div1-home,
+  .div2-home {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .mensagem {
+    padding: 25px;
+  }
+
+  .p-mensagem {
+    font-size: 24px;
+    line-height: 1.6;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .linha-home {
+    width: 90%;
+  }
+}
+
+

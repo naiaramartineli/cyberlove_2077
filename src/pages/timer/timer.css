@@ -205,3 +205,94 @@
 .btn-voltar-timer:hover {
   box-shadow: 0 0 20px var(--rosinha);
 }
+
+/* === MEDIA QUERY ATÉ 700px === */
+@media (max-width: 700px) {
+  .timer {
+    width: 80%;
+    height: auto;
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .lista {
+    width: 80%;
+  }
+
+  .lista li {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .container-frase {
+    width: 80%;
+    min-height: 120px;
+    max-height: none;
+  }
+
+  .fase-dia {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+
+  .titulo-timer h3,
+  .log-emocoes h3,
+  .titulo-frase-dia h3 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .linha-timer {
+    width: 95%;
+  }
+
+  .btn-voltar-timer {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
+}
+
+/* === MEDIA QUERY ATÉ 480px === */
+@media (max-width: 480px) {
+  .timer {
+    width: 85%;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .lista {
+    width: 90%;
+  }
+
+  .lista li {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .container-frase {
+    width: 85%;
+    padding: 10px;
+    min-height: 100px;
+  }
+
+  .fase-dia {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .titulo-timer h3,
+  .log-emocoes h3,
+  .titulo-frase-dia h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .linha-timer {
+    width: 95%;
+  }
+
+  .btn-voltar-timer {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}

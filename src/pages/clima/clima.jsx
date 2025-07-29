@@ -11,31 +11,37 @@ import './clima.css';
 export default function Clima(){
   const navigate = useNavigate();
 
-  return(
-    <div className='page-container'>
-      <Header/>
-      
-      <div className='titulo-terminal'>
-        <p class="p-titulo-terminal">// [ RELATÓRIO.EXE ] // Clima ∆ Coração</p> 
-      </div>
+  return (
+		<div className='page-container'>
+			<Header />
 
-      <div className='bloco-terminal'>
-        <div className='data-container'>
-          <Data/>
-        </div>
+			<div className='main-content-clima'>
+				<div className='titulo-terminal'>
+					<p class='p-titulo-terminal'>
+						// [ RELATÓRIO.EXE ] // Clima ∆ Coração
+					</p>
+				</div>
 
-        <div>
-          <TerminalClima/>
-        </div>
-      
-      </div>
+				<div className='bloco-terminal'>
+					<div className='data-container'>
+						<Data />
+					</div>
 
-      <div className='btn-clima-container'>
-        <button className="btn-voltar-clima" onClick={() => navigate('/home')}>// CORE &gt; MAIN</button> 
-      </div>
+					<div>
+						<TerminalClima />
+					</div>
+				</div>
 
-      <Footer/>
-      
-    </div>
-  );
+				<div className='btn-clima-container'>
+					<button
+						className='btn-voltar-clima'
+						onClick={() => navigate("/home")}>
+						// CORE &gt; MAIN
+					</button>
+				</div>
+			</div>
+
+			<Footer />
+		</div>
+	);
 }

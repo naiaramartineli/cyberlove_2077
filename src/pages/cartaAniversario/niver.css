@@ -4,7 +4,7 @@
 /*Container do terminal*/
 .terminal {
   width: 70%;
-  background-color:transparent;
+  background-color: transparent;
   white-space: pre-wrap;
   padding: 30px;
   margin: 0 auto;
@@ -13,10 +13,10 @@
 }
 
 /*Mensagem*/
-.mensagem-niver{
+.mensagem-niver {
   font-size: 24px;
   line-height: 1.6;
-  overflow: auto;
+  overflow: hidden;
   color: var(--ciano);
 }
 
@@ -34,7 +34,7 @@
   z-index: -1;
   border-radius: 8px;
   padding: 5px;
-  background: linear-gradient(270deg, var(--verdinho),var(--roxo-neon), var(--ciano), var(--amarelo), var(--rosinha));
+  background: linear-gradient(270deg, var(--verdinho), var(--roxo-neon), var(--ciano), var(--amarelo), var(--rosinha));
   background-size: 600% 600%;
   animation: bordaGlow 8s ease infinite;
   mask: 
@@ -57,20 +57,20 @@
 }
 
 /*Botão de Voltar*/
-.container-btn-niver{
+.container-btn-niver {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.btn-voltar-niver{
+.btn-voltar-niver {
   position: relative;
   padding: 12px 24px;
   font-size: 16px;
   font-family: 'Share Tech Mono', monospace;
   color: var(--texto-base);
-  background-color: transparent; /* ou var(--bg-bloco) para um leve destaque */
+  background-color: transparent;
   border: none;
   cursor: pointer;
   border-radius: 8px;
@@ -104,5 +104,50 @@
   }
   100% {
     background-position: 600% 50%;
+  }
+}
+
+/* === RESPONSIVIDADE === */
+
+/* Telas até 700px */
+@media (max-width: 700px) {
+  .terminal {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .mensagem-niver {
+    font-size: 18px;
+    overflow:hidden;
+  }
+
+  .borda-animada {
+    padding: 15px;
+  }
+
+  .btn-voltar-niver {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* Telas até 450px (mobile) */
+@media (max-width: 450px) {
+  .terminal {
+    width: 85%;
+  }
+
+  .mensagem-niver {
+    font-size: 16px;
+    overflow:hidden;
+  }
+
+  .borda-animada {
+    padding: 15px;
+  }
+
+  .btn-voltar-niver {
+    font-size: 13px;
+    padding: 8px 16px;
   }
 }
