@@ -1,6 +1,11 @@
 /* === IMPORT DAS VARIAVEIS === */
 @import url('../../css/variaveis.css');
 
+html, body {
+  background-color: var(--cor-fundo);
+  font-family: 'Share Tech Mono', monospace;
+}
+
 /*Container do terminal*/
 .terminal {
   width: 70%;

@@ -1,6 +1,11 @@
 /* === IMPORT DAS VARIAVEIS === */
 @import url('../../css/variaveis.css');
 
+html, body {
+  background-color: var(--cor-fundo);
+  font-family: 'Share Tech Mono', monospace;
+}
+
 /* Layout base para manter footer no fim */
 html, body {
   height: 100%;

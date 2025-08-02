@@ -1,6 +1,11 @@
 /* === IMPORT DAS VARIAVEIS === */
 @import url('../../css/variaveis.css');
 
+html, body {
+  background-color: var(--cor-fundo);
+  font-family: 'Share Tech Mono', monospace;
+}
+
 /* Container da carta */
 .container-carta {
   width: 70%;

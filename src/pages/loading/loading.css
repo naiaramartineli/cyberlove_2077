@@ -1,6 +1,11 @@
 /* === IMPORT DAS VARIAVEIS === */
 @import url('../../css/variaveis.css');
 
+html, body {
+  background-color: var(--cor-fundo);
+  font-family: 'Share Tech Mono', monospace;
+}
+
 .bg-loading{
   background: radial-gradient(ellipse at center, #1a1a1a 0%, #0f0f0f 40%, #050505 80%, #000000 100%)
 }
