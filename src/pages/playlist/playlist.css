@@ -75,50 +75,103 @@
   border-color: var(--rosa-claro);
 }
 
-/* === MEDIA QUERY: até 768px === */
-@media (max-width: 768px) {
+/* === Breakpoint: XXS (<375px) === */
+@media (max-width: 374.98px) {
   .container-log-playlist,
   .playlist-container {
-    width: 80%;
-    padding: 15px;
+    width: 95%;
+    padding: 10px;
   }
 
-  .titulo-log {
-    font-size: 20px;
+  .titulo-log, .playlist-header {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .log {
+    font-size: 14px;
+  }
+
+  .btn-voltar-playlist {
+    width: 80%;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/* === Breakpoint: XS (<576px) === */
+@media (max-width: 575.98px) {
+  .container-log-playlist,
+  .playlist-container {
+    width: 90%;
+    padding: 12px;
+  }
+
+  .titulo-log, .playlist-header {
+    font-size: 18px;
   }
 
   .log {
     font-size: 16px;
   }
 
-  .playlist-header {
+  .btn-voltar-playlist {
+    width: 80%;
+    font-size: 18px;
+    height: 60px;
+  }
+}
+
+/* === Breakpoint: SM (≥576px) === */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-log-playlist,
+  .playlist-container {
+    width: 85%;
+  }
+
+  .btn-voltar-playlist {
+    width: 80%;
+    font-size: 20px;
+  }
+}
+
+/* === Breakpoint: MD (≥768px) === */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container-log-playlist,
+  .playlist-container {
+    width: 80%;
+  }
+
+  .btn-voltar-playlist {
+    width: 280px;
+    font-size: 20px;
+  }
+}
+
+/* === Breakpoint: LG (≥992px) === */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container-log-playlist,
+  .playlist-container {
+    width: 75%;
+  }
+
+  .btn-voltar-playlist {
+    width: 260px;
     font-size: 22px;
   }
-
-  .btn-voltar-playlist {
-    width: 200px;
-    height: 70px;
-    font-size: 20px;
-  }
 }
 
-/* === MEDIA QUERY: até 480px === */
-@media (max-width: 480px) {
-  .titulo-log {
-    font-size: 18px;
-  }
-
-  .log {
-    font-size: 15px;
-  }
-
-  .playlist-header {
-    font-size: 20px;
+/* === Breakpoint: XL (≥1200px) === */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .container-log-playlist,
+  .playlist-container {
+    width: 70%;
   }
 
   .btn-voltar-playlist {
-    width: 90%;
-    height: 60px;
-    font-size: 18px;
+    width: 250px;
+    font-size: 24px;
   }
 }
+
+

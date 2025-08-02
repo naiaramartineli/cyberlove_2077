@@ -1,14 +1,13 @@
 /* === IMPORT DAS VARIAVEIS === */
 @import url('../../css/variaveis.css');
 
-
-/*Titulo da rádio*/
-.container-titulo-radio{
+/* Titulo da rádio */
+.container-titulo-radio {
   width: 100%;
   text-align: center;
 }
 
-.titulo-radio{
+.titulo-radio {
   color: var(--roxo-neon);
   font-size: 30px;
   margin: 20px 0 10px 0;
@@ -16,15 +15,15 @@
   text-transform: uppercase;
 }
 
-/*Equalizador*/
-.container-equalizador{
+/* Equalizador */
+.container-equalizador {
   width: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
-.equalizador-canvas{
+.equalizador-canvas {
   width: 600px;
   height: 300px;
   border: 2px solid var(--ciano);
@@ -34,18 +33,21 @@
   border-radius: 8px;
 }
 
-/*Botões de Controle*/
+/* Botões de Controle */
 .controle-audio {
   margin-top: 3%;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
+  flex-wrap: nowrap; /* padrão: na mesma linha */
 }
 
-.btn-radio-prev,.btn-radio-play,
-.btn-radio-pause,.btn-radio-next{
-  width:170px;
+.btn-radio-prev,
+.btn-radio-play,
+.btn-radio-pause,
+.btn-radio-next {
+  width: 170px;
   height: 50px;
   font-size: 20px;
   background-color: var(--bg-botao);
@@ -61,16 +63,18 @@
   transition: all 0.3s ease;
 }
 
-.btn-radio-prev:hover,.btn-radio-play:hover,
-.btn-radio-pause:hover,.btn-radio-next:hover{
+.btn-radio-prev:hover,
+.btn-radio-play:hover,
+.btn-radio-pause:hover,
+.btn-radio-next:hover {
   background-color: var(--roxo-neon);
   color: var(--cor-fundo);
   box-shadow: 0 0 20px var(--roxo-neon), 0 0 30px var(--roxo-neon);
   transform: scale(1.05);
 }
 
-/*Soundtrack*/
-.soudtrack-container{
+/* Soundtrack */
+.soudtrack-container {
   margin-top: 40px;
   width: 100%;
   height: 50px;
@@ -79,15 +83,15 @@
   display: flex;
 }
 
-.track-name{
+.track-name {
   font-size: 24px;
   text-transform: uppercase;
   text-shadow: 0 0 5px var(--ciano);
   color: var(--ciano);
 }
 
-/*Botão de voltar*/
-.btn-volta-radio{
+/* Botão de voltar */
+.btn-volta-radio {
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -95,7 +99,7 @@
   margin-top: 3%;
 }
 
-.btn-voltar{
+.btn-voltar {
   height: 65px;
   font-size: 20px;
   background: linear-gradient(10deg, var(--roxo-suave), var(--roxo-neon));
@@ -108,88 +112,275 @@
   box-shadow: 0 0 10px var(--roxo-suave), 0 0 5px var(--rosa-claro-suave);
 }
 
-.btn-voltar:hover{
+.btn-voltar:hover {
   background: var(--roxo-neon);
   color: var(--texto-base);
   box-shadow: 0 0 20px var(--roxo-neon), 0 0 10px var(--rosa-claro);
   transform: translateY(-2px);
 }
 
-/* === MEDIA QUERY ATÉ 768px === */
-@media (max-width: 768px) {
+/* === MEDIA QUERIES === */
+
+/* XXS - menor que 375px */
+@media (max-width: 374.98px) {
   .titulo-radio {
-    font-size: 24px;
+    font-size: 22px;
     margin: 15px 0 8px 0;
   }
 
   .equalizador-canvas {
-    width: 80%;
-    height: 240px;
-    margin-top: 6%;
-  }
-
-  .btn-radio-prev,
-  .btn-radio-play,
-  .btn-radio-pause,
-  .btn-radio-next {
-    width: 140px;
-    height: 45px;
-    font-size: 18px;
-  }
-
-  .track-name {
-    font-size: 20px;
-  }
-
-  .btn-voltar {
-    height: 55px;
-    font-size: 18px;
-  }
-}
-
-/* === MEDIA QUERY ATÉ 480px === */
-@media (max-width: 480px) {
-  .titulo-radio {
-    font-size: 20px;
-    margin: 10px 0 6px 0;
-  }
-
-  .equalizador-canvas {
-    width: 80%;
-    height: 200px;
+    width: 280px;
+    height: 140px;
     margin-top: 8%;
   }
 
   .controle-audio {
     flex-direction: column;
-    gap: 10px;
-    margin-top: 5%;
+    gap: 12px;
   }
 
   .btn-radio-prev,
   .btn-radio-play,
   .btn-radio-pause,
   .btn-radio-next {
-    width: 90%;
-    height: 45px;
-    font-size: 16px;
+    width: 100%;
+    max-width: 280px;
+    height: 40px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+
+  .soudtrack-container {
+    flex-direction: column;
+    padding: 0 10px;
+    text-align: center;
   }
 
   .track-name {
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
-    padding: 0 10px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 100%;
   }
 
   .btn-voltar {
-    width: 90%;
     height: 50px;
     font-size: 16px;
-    text-align: center;
+    padding: 8px 16px;
+  }
+}
+
+
+/* XS - menor que 576px */
+@media (min-width: 375px) and (max-width: 575.98px) {
+  .titulo-radio {
+    font-size: 26px;
+    margin: 18px 0 9px 0;
   }
 
-  .btn-volta-radio {
+  .equalizador-canvas {
+    width: 90%;
+    height: 210px;
+    margin-top: 6%;
+  }
+
+  .controle-audio {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 80%;
+    max-width: 420px;
+    height: 45px;
+    font-size: 16px;
+    padding: 10px 16px;
+  }
+
+  .track-name {
+    font-size: 20px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    max-width: 85%;
+  }
+
+  .btn-voltar {
+    height: 55px;
+    font-size: 18px;
+    padding: 9px 18px;
+  }
+}
+
+/* SM - 576px até 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .titulo-radio {
+    font-size: 28px;
+  }
+
+  .equalizador-canvas {
+    width: 500px;
+    height: 250px;
     margin-top: 5%;
-    padding: 0 10px;
+  }
+
+  .controle-audio {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 100%;
+    max-width: 500px;
+    height: 48px;
+    font-size: 18px;
+    padding: 11px 20px;
+  }
+
+  .track-name {
+    font-size: 22px;
+  }
+
+  .btn-voltar {
+    height: 60px;
+    font-size: 19px;
+    padding: 10px 20px;
+  }
+}
+
+/* MD - 768px até 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .titulo-radio {
+    font-size: 29px;
+  }
+
+  .equalizador-canvas {
+    width: 580px;
+    height: 280px;
+  }
+
+  .controle-audio {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 165px;
+    height: 50px;
+    font-size: 19px;
+    padding: 12px 22px;
+  }
+
+  .track-name {
+    font-size: 20px;
+  }
+
+  .btn-voltar {
+    height: 62px;
+    font-size: 20px;
+    padding: 11px 22px;
+  }
+}
+
+/* LG - 992px até 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .titulo-radio {
+    font-size: 30px;
+  }
+
+  .equalizador-canvas {
+    width: 600px;
+    height: 300px;
+  }
+
+  .controle-audio {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 170px;
+    height: 50px;
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+
+  .track-name {
+    font-size: 24px;
+  }
+
+  .btn-voltar {
+    height: 65px;
+    font-size: 20px;
+    padding: 10px 20px;
+  }
+}
+
+/* XL - 1200px até 1399.98px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .equalizador-canvas {
+    width: 650px;
+    height: 320px;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 180px;
+    height: 55px;
+    font-size: 21px;
+  }
+
+  .track-name {
+    font-size: 25px;
+  }
+
+  .btn-voltar {
+    height: 70px;
+    font-size: 22px;
+    padding: 12px 24px;
+  }
+}
+
+/* XXL - 1400px ou mais */
+@media (min-width: 1400px) {
+  .equalizador-canvas {
+    width: 700px;
+    height: 350px;
+  }
+
+  .btn-radio-prev,
+  .btn-radio-play,
+  .btn-radio-pause,
+  .btn-radio-next {
+    width: 190px;
+    height: 60px;
+    font-size: 22px;
+  }
+
+  .track-name {
+    font-size: 26px;
+  }
+
+  .btn-voltar {
+    height: 75px;
+    font-size: 23px;
+    padding: 14px 26px;
   }
 }

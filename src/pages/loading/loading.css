@@ -53,39 +53,92 @@
   to { opacity: 0.98; }
 }
 
-/* === MEDIA QUERY ATÉ 768px === */
-@media (max-width: 768px) {
+/* === XXS: Menor que 375px === */
+@media (max-width: 374.98px) {
+  .terminal-glow {
+    font-size: 14px;
+    padding: 1rem;
+    width: 95%;
+  }
+
+  .terminal-container {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: left;
+  }
+}
+
+/* === XS: Menor que 576px === */
+@media (max-width: 575.98px) {
+  .terminal-glow {
+    font-size: 14px;
+    padding: 1.2rem;
+    width: 95%;
+  }
+
+  .terminal-container {
+    flex-direction: column;
+    padding: 1.2rem;
+    text-align: left;
+  }
+}
+
+/* === SM: Entre 576px e 767.98px === */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .terminal-glow {
+    font-size: 18px;
+    padding: 1.5rem;
+    width: 85%;
+  }
+  .terminal-container {
+    flex-direction: column;
+    padding: 1.2rem;
+    text-align: left;
+  }
+}
+
+/* === MD: Entre 768px e 991.98px === */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .terminal-glow {
     font-size: 20px;
-    padding: 1.5rem;
-    width: 80%;
+    padding: 1.7rem;
+    width: 75%;
   }
 
   .terminal-container {
-    margin-top: 8%;
-    padding: 0 16px;
-  }
-}
-
-/* === MEDIA QUERY ATÉ 480px === */
-@media (max-width: 480px) {
-  .terminal-glow {
-    font-size: 16px;
-    padding: 1rem;
-    width: 80%;
-    box-shadow: 0 0 15px #00f6ff22;
-  }
-
-  .terminal-container {
-    margin-top: 10%;
-    padding: 0 10px;
     flex-direction: column;
-  }
-
-  .terminal-line {
-    font-size: 14px;
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    padding: 1.2rem;
+    text-align: left;
   }
 }
+
+/* === LG: Entre 992px e 1199.98px === */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .terminal-glow {
+    font-size: 22px;
+    padding: 1.8rem;
+    width: 70%;
+  }
+
+  .terminal-container {
+    flex-direction: column;
+    padding: 1.2rem;
+    text-align: left;
+  }
+}
+
+/* === XL: Entre 1200px e 1399.98px === */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .terminal-glow {
+    font-size: 24px;
+    padding: 2rem;
+    width: 65%;
+  }
+
+  .terminal-container {
+    flex-direction: column;
+    padding: 1.2rem;
+    text-align: left;
+  }
+}
+

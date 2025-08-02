@@ -169,77 +169,165 @@ html, body {
   }
 }
 
-/* === MEDIA QUERY: até 768px === */
-@media (max-width: 768px) {
+/* XXS: menor que 375px */
+@media (max-width: 374.98px) {
   .p-titulo-terminal {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .data-container {
-    width: 80%;
-    height: auto;
-  }
-
-  .p-data-clima {
-    font-size: 20px;
+    width: 90%;
   }
 
   .terminal-clima {
-    width: 90%;
+    width: 95%;
+    min-height: 450px;
     height: auto;
+    font-size: 14px;
+    margin-left: 5%;
   }
 
-  .final-clima,
-  .clima {
-    font-size: 20px;
+  .final-clima, .clima {
+    font-size: 16px;
   }
 
   .btn-voltar-clima {
-    font-size: 20px;
-    padding: 10px 24px;
+    font-size: 16px;
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  .btn-clima-container {
+    flex-direction: column;
+  }
+  
+  .p-data-clima {
+    color: var(--ciano);
+    text-shadow: 0 0 6px var(--ciano);
+    font-size: 14px;
   }
 }
 
-/* === MEDIA QUERY: até 480px === */
-@media (max-width: 480px) {
-  .p-titulo-terminal {
+/* XS: menor que 576px */
+@media (max-width: 575.98px) {
+  .data-container {
+    width: 90%;
+  }
+
+  .terminal-clima {
+    width: 95%;
+    height: auto;
     font-size: 16px;
-    margin-top: 3%;
+    min-height: 600px;
+    margin-left: 5%;
+  }
+
+  .btn-voltar-clima {
+    font-size: 18px;
+    padding: 10px 22px;
+  }
+
+  .btn-clima-container {
+    flex-direction: column;
+  }
+
+  .p-data-clima {
+    color: var(--ciano);
+    text-shadow: 0 0 6px var(--ciano);
+    font-size: 18px;
+  }
+}
+
+/* SM: 576px até 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .terminal-clima {
+    width: 90%;
+    height: 300px;
+  }
+
+  .btn-voltar-clima {
+    font-size: 18px;
   }
 
   .data-container {
     width: 80%;
-    height: auto;
-  }
-
-  .p-data-clima {
-    font-size: 16px;
   }
 
   .terminal-clima {
-    width: 350px;
+    width: 95%;
     height: auto;
-    flex-grow: 1;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    white-space: normal;
+    font-size: 16px;
+    min-height: 350px;
+    margin-left: 9%;
   }
 
-  .final-clima,
-  .clima {
-    font-size: 18px;
+}
+
+/* MD: 768px até 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .terminal-clima {
+    width: 85%;
+    height: 320px;
   }
 
   .btn-voltar-clima {
-    width: 90%;
-    font-size: 18px;
-    padding: 10px 20px;
+    font-size: 20px;
   }
 
-  .terminal-relatorio-container {
-    white-space: pre-wrap;
-    display: inline-block;
-    min-height: 280px;
+  .data-container {
+    width: 75%;
+  }
 
+  .terminal-clima {
+    width: 85%;
+    height: auto;
+    font-size: 16px;
+    min-height: 350px;
+    margin-left: 10%;
+  }
+
+  .p-data-clima {
+    color: var(--ciano);
+    text-shadow: 0 0 6px var(--ciano);
+    font-size: 18px;
+  }
+}
+
+/* LG: 992px até 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .terminal-clima {
+    width: 800px;
+    height: 330px;
+  }
+
+  .data-container {
+    width: 80%;
+  }
+  .terminal-clima {
+    width: 85%;
+    height: auto;
+    font-size: 30px;
+    min-height: 350px;
+    margin-left: 9%;
+  }
+}
+
+/* XL: 1200px até 1399.98px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .terminal-clima {
+    width: 780px;
+    height: 350px;
+  }
+
+  .btn-voltar-clima {
+    font-size: 22px;
+  }
+}
+
+/* XXL: 1400px ou mais */
+@media (min-width: 1400px) {
+  .terminal-clima {
+    width: 800px;
+    height: 400px;
   }
 }

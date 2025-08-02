@@ -126,105 +126,224 @@ input[type="text"] {
   border-color: var(--roxo-neon);
 }
 
-/* === MEDIA QUERY === */
-@media (max-width: 768px) {
+/* ===== MEDIA QUERIES TERMINAL ===== */
+
+/* XS - menor que 576px */
+@media (max-width: 575.98px) {
   .terminal-container-frases {
-    max-width: 90%;
+    max-width: 95%;
     padding: 10px;
+    gap: 15px;
   }
 
   .h2-terminal {
     font-size: 1.2rem;
   }
 
+  .container-dados {
+    width: 100%;
+    gap: 8px;
+    padding: 8px 0;
+  }
+
   input[type="text"] {
+    width: 100%;
+    height: 28px;
     font-size: 16px;
     padding: 8px;
   }
 
   .btn-gerar {
-    width: 100%;
+    width: 140px;
     height: 45px;
+    font-size: 14px;
+  }
+
+  .frase-terminal-container {
+    width: 95%;
+    padding: 15px;
+    height: auto;
+  }
+
+  .frase-terminal {
+    font-size: 16px;
+  }
+
+  .container-botoes {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .btn-voltar-terminal,
+  .btn-reset {
+    width: 90%;
+    height: 50px;
+    font-size: 16px;
+  }
+}
+
+/* SM - 576px até 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .terminal-container-frases {
+    max-width: 90%;
+    padding: 12px;
+  }
+
+  .h2-terminal {
+    font-size: 1.3rem;
+  }
+
+  input[type="text"] {
+    font-size: 18px;
+    height: 30px;
+  }
+
+  .btn-gerar {
+    width: 150px;
+    height: 48px;
     font-size: 15px;
   }
 
   .frase-terminal-container {
     width: 90%;
-    height: auto;
-    padding: 15px;
+    padding: 18px;
+    height: 210px;
   }
 
   .frase-terminal {
     font-size: 18px;
   }
-
-  .container-botoes {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .btn-voltar-terminal,
-  .btn-reset {
-    width: 90%;
-    font-size: 16px;
-  }
 }
 
-/* === MEDIA QUERY PARA CELULARES === */
-@media (max-width: 480px) {
+/* MD - 768px até 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
   .terminal-container-frases {
     max-width: 80%;
-    padding: 10px;
-    gap: 15px;
+    padding: 15px;
   }
 
   .h2-terminal {
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .container-dados {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    font-size: 1.4rem;
   }
 
   input[type="text"] {
-    width: 100%;
-    font-size: 16px;
-    padding: 8px;
+    font-size: 19px;
+    height: 32px;
   }
 
   .btn-gerar {
-    width: 100%;
-    height: 45px;
-    font-size: 15px;
+    width: 160px;
+    height: 50px;
+    font-size: 16px;
   }
 
   .frase-terminal-container {
     width: 80%;
-    height: 150px;
-    padding: 15px;
+    padding: 20px;
+    height: 220px;
   }
 
   .frase-terminal {
-    font-size: 16px;
-    max-width: 100%;
-    height: auto;
+    font-size: 19px;
+  }
+}
+
+/* LG - 992px até 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .terminal-container-frases {
+    max-width: 70%;
+    padding: 15px;
   }
 
-  .container-botoes {
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-    margin-top: 20px;
+  .h2-terminal {
+    font-size: 1.5rem;
   }
 
-  .btn-voltar-terminal,
-  .btn-reset {
-    width: 100%;
+  input[type="text"] {
+    font-size: 20px;
+    height: 30px;
+  }
+
+  .btn-gerar {
+    width: 160px;
+    height: 50px;
     font-size: 16px;
-    height: 40px;
+  }
+
+  .frase-terminal-container {
+    width: 70%;
+    padding: 20px;
+    height: 200px;
+  }
+
+  .frase-terminal {
+    font-size: 20px;
+  }
+}
+
+/* XL - 1200px até 1399.98px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .terminal-container-frases {
+    max-width: 65%;
+    padding: 18px;
+  }
+
+  .h2-terminal {
+    font-size: 1.6rem;
+  }
+
+  input[type="text"] {
+    font-size: 21px;
+    height: 32px;
+  }
+
+  .btn-gerar {
+    width: 170px;
+    height: 52px;
+    font-size: 17px;
+  }
+
+  .frase-terminal-container {
+    width: 65%;
+    padding: 22px;
+    height: 210px;
+  }
+
+  .frase-terminal {
+    font-size: 21px;
+  }
+}
+
+/* XXL - 1400px ou mais */
+@media (min-width: 1400px) {
+  .terminal-container-frases {
+    max-width: 60%;
+    padding: 20px;
+  }
+
+  .h2-terminal {
+    font-size: 1.7rem;
+  }
+
+  input[type="text"] {
+    font-size: 22px;
+    height: 34px;
+  }
+
+  .btn-gerar {
+    width: 180px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .frase-terminal-container {
+    width: 60%;
+    padding: 25px;
+    height: 220px;
+  }
+
+  .frase-terminal {
+    font-size: 22px;
   }
 }

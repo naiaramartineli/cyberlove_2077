@@ -108,3 +108,118 @@
     background-position: 500% 50%;
   }
 }
+
+/* XXS: menor que 375px */
+@media (max-width: 374.98px) {
+  .container-carta {
+    width: 85%;
+    padding: 15px;
+  }
+
+  .container-carta h3 {
+    font-size: 16px;
+  }
+
+  .container-carta p {
+    font-size: 14px;
+  }
+
+  .btn-voltar-carta {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
+
+/* XS: menor que 576px */
+@media (max-width: 575.98px) {
+  .container-carta {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .container-carta h3 {
+    font-size: 18px;
+  }
+
+  .container-carta p {
+    font-size: 16px;
+  }
+
+  .btn-voltar-carta {
+    font-size: 15px;
+    padding: 12px 22px;
+  }
+}
+
+/* SM: 576px até 767.98px */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container-carta {
+    width: 80%;
+  }
+
+  .container-carta h3 {
+    font-size: 20px;
+  }
+
+  .container-carta p {
+    font-size: 18px;
+  }
+
+  .btn-voltar-carta {
+    font-size: 16px;
+  }
+}
+
+/* MD: 768px até 991.98px */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container-carta {
+    width: 75%;
+  }
+
+  .container-carta h3 {
+    font-size: 21px;
+  }
+
+  .container-carta p {
+    font-size: 19px;
+  }
+
+  .btn-voltar-carta {
+    font-size: 16px;
+  }
+}
+
+/* LG: 992px até 1199.98px */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container-carta {
+    width: 70%;
+  }
+
+  .container-carta h3 {
+    font-size: 22px;
+  }
+
+  .container-carta p {
+    font-size: 20px;
+  }
+
+  .btn-voltar-carta {
+    font-size: 16px;
+  }
+}
+
+/* XL: 1200px até 1399.98px */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .container-carta {
+    width: 70%;
+  }
+  
+}
+
+/* XXL: 1400px ou mais */
+@media (min-width: 1400px) {
+  .container-carta {
+    width: 70%;
+  }
+}
+
