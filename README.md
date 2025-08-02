@@ -39,7 +39,6 @@ A aplicação conta com uma **página inicial interativa**, onde o usuário pode
 - **React.js** – Estrutura principal da aplicação  
 - **JavaScript (JS)** – Lógica da aplicação  
 - **HTML + CSS** – Estruturação e estilização das páginas  
-- **Bootstrap** – Estilização e responsividade
 
 ---
 
